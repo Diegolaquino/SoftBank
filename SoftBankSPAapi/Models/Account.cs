@@ -19,6 +19,6 @@ namespace SoftBankSPAapi.Models
 
         public int AccountNumber { get; set; }
 
-        public List<AccountantService> ContractedServices { get; set; }
+        public List<AccountProduct> ContractedProducts { get; set; }
     }
 }

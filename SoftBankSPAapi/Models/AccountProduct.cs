@@ -2,9 +2,9 @@
 
 namespace SoftBankSPAapi.Models
 {
-    public class AccountantService
+    public class AccountProduct
     {
-        public int AccountantServiceId { get; set; }
+        public int AccountProductId { get; set; }
 
         public string NameService { get; set; }
 

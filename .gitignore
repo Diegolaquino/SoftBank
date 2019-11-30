@@ -267,3 +267,6 @@ HomeController.cs
 VendasController.cs
 .vs/SoftBankSPAapi/v15/.suo
 .vs/SoftBankSPAapi/v15/.suo
+*.pdb
+*.dll
+*.ide-wal

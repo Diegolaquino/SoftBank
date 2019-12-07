@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\angular\" />
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
 </Project>

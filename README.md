@@ -6,7 +6,7 @@
 
 SoftBank uses a number of open source projects to work properly:
 
-* [AngularJS] - HTML enhanced for web apps!
+* [Angular] - HTML enhanced for web apps!
 * Asp.Net core - awesome web-based text editor
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
 

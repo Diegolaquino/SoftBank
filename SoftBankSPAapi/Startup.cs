@@ -41,7 +41,7 @@ namespace SoftBankSPAapi
             //allow request of same origin
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            //app.UseStaticFiles();
             app.UseMvc();
             
         }

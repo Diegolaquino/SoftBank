@@ -16,7 +16,7 @@ namespace SoftBankSPAapi.Models
 
         public Account ToAccount { get; set; }
 
-        public int ToAccountId { get; set; }
+        public int? ToAccountId { get; set; }
 
         public string Description { get; set; }
 

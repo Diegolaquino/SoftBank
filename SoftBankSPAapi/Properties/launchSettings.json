@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:44391/index.html",
+      "launchUrl": "http://localhost:5000/api/home",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "SoftBankSPAapi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "https://localhost:44391/index.html",
+      "launchUrl": "http://localhost:5000/api/home",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

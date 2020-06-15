@@ -270,3 +270,4 @@ VendasController.cs
 *.pdb
 *.dll
 *.ide-wal
+/SoftBankSPAapi/Migrations

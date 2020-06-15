@@ -4,7 +4,6 @@ D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\bin\Debug\netcoreapp2.2\SoftBankSPAapi
 D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\bin\Debug\netcoreapp2.2\SoftBankSPAapi.dll
 D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\bin\Debug\netcoreapp2.2\SoftBankSPAapi.pdb
 D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\obj\Debug\netcoreapp2.2\SoftBankSPAapi.csprojAssemblyReference.cache
-D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\obj\Debug\netcoreapp2.2\SoftBankSPAapi.csproj.CoreCompileInputs.cache
 D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\obj\Debug\netcoreapp2.2\SoftBankSPAapi.RazorAssemblyInfo.cache
 D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\obj\Debug\netcoreapp2.2\SoftBankSPAapi.RazorAssemblyInfo.cs
 D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\obj\Debug\netcoreapp2.2\SoftBankSPAapi.AssemblyInfoInputs.cache
@@ -15,3 +14,8 @@ D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\obj\Debug\netcoreapp2.2\SoftBankSPAapi
 D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\bin\Debug\netcoreapp2.2\SoftBankSPAapi.Views.dll
 D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\bin\Debug\netcoreapp2.2\SoftBankSPAapi.Views.pdb
 D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\obj\Debug\netcoreapp2.2\SoftBankSPAapi.csproj.CopyComplete
+D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\obj\Debug\netcoreapp2.2\SoftBankSPAapi.genruntimeconfig.cache
+D:\Projetos\SoftBankSPAapi\SoftBankSPAapi\obj\Debug\netcoreapp2.2\SoftBankSPAapi.csproj.CoreCompileInputs.cache

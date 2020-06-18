@@ -53,7 +53,14 @@ button[type=submit]{
 /*image-background*/
 .img-background{
     width: 100%;
-    background-color: blueviolet;
+    background:url('https://raw.githubusercontent.com/Diegolaquino/SoftBank/master/softbank-client/src/img/capa.jpg') no-repeat;
+    background-size: cover;
     height: 600px;
+    padding-top: 80px;
+}
 
+.chamada{
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
 }

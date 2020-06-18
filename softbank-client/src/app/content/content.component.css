@@ -1,3 +1,13 @@
 .content{
     width: 100%;
 }
+
+.titulo-mais{
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 60px;
+}
+
+.servicos-banco{
+    margin-top: 30px;
+}

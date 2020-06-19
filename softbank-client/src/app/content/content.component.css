@@ -11,3 +11,8 @@
 .servicos-banco{
     margin-top: 30px;
 }
+
+.servicos-banco div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

@@ -1,4 +1,4 @@
-export interface AccountDiscovery{
+export class AccountDiscovery{
     agencia: number;
     conta: number;
 }

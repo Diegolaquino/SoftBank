@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/user.service';
+import { AccountDiscovery } from '../Models/accountDiscovery.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,14 +10,27 @@ import { UserService } from '../services/user.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private userService: UserService) { }
+  account: AccountDiscovery = new AccountDiscovery();
+  submitted = false;
+
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit() {
   }
 
-  onSubmit(accountDiscovery){
-    console.log(accountDiscovery);
-    this.userService.printar();
+  onSubmit(){
+    //console.log(this.account);
+    let t = this.userService.getAccountInformation(this.account).subscribe(
+      data => {  if(data != null){
+        this.submitted = true;
+      }  }
+    );
+   
+  }
+
+  newAccount(): void {
+    this.submitted = false;
+    this.account = new AccountDiscovery();
   }
 
 }

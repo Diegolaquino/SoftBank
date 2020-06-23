@@ -1,14 +1,14 @@
 <div class="area-login">
     <div>
         
-        <form id="form-login">
+        <form id="form-login" (ngSubmit)="onSubmit()" [hidden]="submitted">
             <p>Acessar sua conta <span>S2</span> | </p>
             
             <label>Agencia:</label>
-            <input type="text" name="agencia" id="agencia">
+            <input type="text" name="agencia" id="agencia" required [(ngModel)]="account.agencia">
             <label>Conta:</label>
-            <input type="text" name="conta" id="conta">
-            <button type="submit" (click)="onSubmit()">OK</button>
+            <input type="text" name="conta" id="conta" required [(ngModel)]="account.conta">
+            <button type="submit">OK</button>
         </form>
     </div>
 </div>

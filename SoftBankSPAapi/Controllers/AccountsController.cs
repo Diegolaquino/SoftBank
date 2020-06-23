@@ -60,5 +60,16 @@ namespace SoftBankSPAapi.Controllers
         [Authorize]
         [Route("Authenticated")]
         public string Authenticated() => String.Format("Autenticado {0}", User.Identity.Name);
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("AccountInformation")]
+        public async Task<ActionResult<dynamic>> GetAccountInformation(AccountModel account)
+        {
+            return new { 
+                cliente = "Diego Aquino",
+                cpf = "123964xxxx"
+            };
+        }
     }
 }

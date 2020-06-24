@@ -19,11 +19,8 @@ export class HeaderComponent implements OnInit {
   }
 
   onSubmit(){
-    //console.log(this.account);
     let t = this.userService.getAccountInformation(this.account).subscribe(
-      data => {  if(data != null){
-        this.submitted = true;
-      }  }
+      console.log
     );
    
   }

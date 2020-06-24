@@ -1,4 +1,4 @@
 export class AccountDiscovery{
-    agencia: number;
-    conta: number;
+    agencia: string;
+    conta: string;
 }

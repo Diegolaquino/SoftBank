@@ -8,7 +8,7 @@ namespace SoftBankSPAapi.Models
 {
     public class AccountModel
     {
-        public int agencia { get; set; }
-        public int conta { get; set; }
+        public string agencia { get; set; }
+        public string conta { get; set; }
     }
 }

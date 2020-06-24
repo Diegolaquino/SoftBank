@@ -64,11 +64,12 @@ namespace SoftBankSPAapi.Controllers
         [HttpGet]
         [AllowAnonymous]
         [Route("AccountInformation")]
-        public async Task<ActionResult<dynamic>> GetAccountInformation(AccountModel account)
+        public async Task<ActionResult<AccountModel>> GetAccountInformation([FromQuery]AccountModel account)
         {
-            return new { 
-                cliente = "Diego Aquino",
-                cpf = "123964xxxx"
+            return new AccountModel
+            { 
+                agencia = "Diego Aquino",
+                conta = "123964xxxx"
             };
         }
     }

@@ -10,13 +10,12 @@ import 'rxjs/add/operator/catch';
 })
 export class UserService {
 
-  private readonly baseUrl = 'http://localhost:5000/api/home/Teste';
+  private readonly baseUrl = 'http://localhost:5000/api/accounts/AccountInformation';
 
   constructor(private http: HttpClient) { }
 
   getAccountInformation(account){
-    console.log('aqui');
-    return this.http.get(this.baseUrl);
+    return this.http.get(this.baseUrl, {params: account});
   }
 
 

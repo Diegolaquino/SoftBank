@@ -15,9 +15,9 @@ namespace SoftBankSPAapi.Models
 
         public decimal Balance { get; set; }
 
-        public int AgencyNumber { get; set; }
+        public string AgencyNumber { get; set; }
 
-        public int AccountNumber { get; set; }
+        public string AccountNumber { get; set; }
 
         public List<AccountProduct> ContractedProducts { get; set; }
     }

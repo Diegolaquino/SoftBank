@@ -1,6 +1,6 @@
 <div class="area-login">
     <div>
-        
+        <span [hidden]="!submitted" class="welcome">Seja bem vindo, {{ customer }}</span>
         <form id="form-login" (ngSubmit)="onSubmit()" [hidden]="submitted">
             <p>Acessar sua conta <span>S2</span> | </p>
             

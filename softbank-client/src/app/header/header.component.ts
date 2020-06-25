@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/user.service';
 import { AccountDiscovery } from '../Models/accountDiscovery.model';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
 
   account: AccountDiscovery = new AccountDiscovery();
   submitted = false;
+  customer = "";
 
   constructor(private userService: UserService, private router: Router) { }
 
@@ -19,9 +20,15 @@ export class HeaderComponent implements OnInit {
   }
 
   onSubmit(){
-    let t = this.userService.getAccountInformation(this.account).subscribe(
-      console.log
+    
+    this.userService.getAccountInformation(this.account).subscribe(
+      data => {
+        this.customer = data['customer'];
+      }
     );
+    this.router.navigate(['/login']);
+    this.submitted = true;
+    
    
   }
 

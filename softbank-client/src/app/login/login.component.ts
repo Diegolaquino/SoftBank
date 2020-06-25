@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/user.service';
 import { AccountLogin } from '../Models/accountLogin.model';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,17 +11,26 @@ import { AccountLogin } from '../Models/accountLogin.model';
 export class LoginComponent implements OnInit {
 
   accountLogin: AccountLogin = new AccountLogin();
+  customer: string;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private router: Router,  private routerr: ActivatedRoute) { 
+
+    let questoesParam = this.routerr
+    .queryParamMap
+    .map(params => params.get('customer') || 'None');
+
+    console.log(questoesParam);
+  }
 
   ngOnInit() {
+    
   }
 
   onSubmit(){
     this.accountLogin.role = "Admin";
-    console.log(this.accountLogin);
+    
     this.userService.authenticateUser(this.accountLogin).subscribe(
-      console.log
+      data => console.log(data)
     );
   }
 

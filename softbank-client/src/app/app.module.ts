@@ -10,6 +10,7 @@ import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { UserService } from './services/user.service'
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { LoginComponent } from './login/login.component';
       HeaderComponent,
       ContentComponent,
       FooterComponent,
-      LoginComponent
+      LoginComponent,
+      HomeComponent
    ],
    imports: [
       BrowserModule,

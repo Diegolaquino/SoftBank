@@ -10,7 +10,7 @@ import 'rxjs/add/operator/catch';
 })
 export class UserService {
 
-  private readonly baseUrl = 'http://localhost:5000/api/accounts';
+  private readonly baseUrl = 'http://localhost:5000/api/useraccount';
 
   constructor(private http: HttpClient) { }
 

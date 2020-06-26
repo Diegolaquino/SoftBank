@@ -7,6 +7,14 @@ namespace SoftBankSPAapi.Models
 {
     public class BankStatement
     {
+        public BankStatement()
+        {
 
+        }
+        public DateTime StartDate { get; private set; }
+
+        public DateTime EndtDate { get; private set; }
+
+        public AccountTransaction Transactions { get; private set; }
     }
 }

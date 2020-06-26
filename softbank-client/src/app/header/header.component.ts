@@ -10,9 +10,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+  token = "";
   account: AccountDiscovery = new AccountDiscovery();
   submitted = false;
   customer = "";
+
 
   constructor(private userService: UserService, private router: Router) { }
 

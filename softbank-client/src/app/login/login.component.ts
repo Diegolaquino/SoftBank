@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
 
   accountLogin: AccountLogin = new AccountLogin();
   customer: string;
+  userInfo = {};
 
   constructor(private userService: UserService, private router: Router,  private routerr: ActivatedRoute) { 
 
@@ -27,11 +28,28 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(){
+    
     this.accountLogin.role = "Admin";
     
     this.userService.authenticateUser(this.accountLogin).subscribe(
-      data => console.log(data)
+      (data) => {
+        console.log("Autenticado");
+        this.userInfo = data;
+        
+      }
     );
+
+   this.saveToken();
+
+   this.router.navigate(['/home']);
+
+
+  }
+
+  saveToken(){
+    const data = JSON.stringify(this.userInfo);
+
+    sessionStorage.setItem('userInfo', data);
   }
 
 

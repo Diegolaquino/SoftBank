@@ -11,7 +11,7 @@ namespace SoftBankSPAapi.Models.Enum
         [Display(Name = "Pagamento")]
         Payment = 1,
 
-
+        [Display(Name ="Transferência")]
         Transfer = 2,
         BankWithdrawal = 3,
         Purchase = 4

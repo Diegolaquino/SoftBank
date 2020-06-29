@@ -15,6 +15,6 @@ namespace SoftBankSPAapi.Models
 
         public DateTime EndtDate { get; private set; }
 
-        public AccountTransaction Transactions { get; private set; }
+        public List<AccountTransaction> Transactions { get; private set; }
     }
 }

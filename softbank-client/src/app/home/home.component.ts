@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Customer } from '../Models/customer';
 import { Router } from '@angular/router';
 import * as Chart from 'chart.js';
+import { BankStatement } from '../Models/bankStatement.model';
+import { AccountTransationsService } from '../services/accounttransaction.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +17,12 @@ export class HomeComponent implements OnInit {
 
   PieChart : Chart;
 
-  constructor(private route: Router) { }
+  bankStatements : BankStatement[];
+
+  constructor(private route: Router, private accounttransactionService: AccountTransationsService) { 
+    
+    
+  }
 
   ngOnInit() {
     var dataUserInfo = sessionStorage.getItem('userInfo');
@@ -26,6 +34,12 @@ export class HomeComponent implements OnInit {
     var userInfo = JSON.parse(dataUserInfo);
 
     this.customer = userInfo.user;
+
+    this.accounttransactionService.getBankStatements().subscribe(bankStatements => this.bankStatements = bankStatements);
+
+    console.log("this.bankStatements");
+    console.log(this.bankStatements);
+
 
     this.PieChart = new Chart ('pieChart', {
       type:'doughnut',
